@@ -1,0 +1,13 @@
+.linka:hover, .ico:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10%;
+    background-color: rgb(180, 221, 160);
+    color: white;
+    
+}
+
+#h1uni h1:hover, #pmain p:hover{
+    cursor: default;
+    color: rgb(19, 0, 143);
+
+}

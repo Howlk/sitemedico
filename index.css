@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans Mono', monospace;
+    box-sizing: border-box;
+    color: rgb(9, 1, 58);
+}
+body{
+    background-color: rgb(247, 239, 239);
+}
+#color{
+    background-color: rgb(229, 242, 245);
+    width: 80vw;
+    min-width: 500px;
+    margin: 0 auto;
+    padding-top: 2rem ;
+}
+/* NAV */
+/* ----------------------------------------------------------------------------- */
+#menu{
+    background-color: rgb(203, 240, 185);
+    width: calc(100vw);
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo img{
+    width: 3rem;
+}
+
+#menubot{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: calc(100%-30%)
+}
+
+#menubot ul{
+    display: flex;
+    list-style: none;
+}
+
+
+#menubot2{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 1rem;
+    width: calc(100%-10%)
+}
+
+#menubot2 ul{
+    list-style: none;
+    display: flex;
+
+}
+
+.linka{
+    font-size: 1.2rem;
+    list-style: none;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.ico{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.linka, .ico{
+    transition: 0.3s;
+}
+/* ------------------------------------------------------------------------------ */
+/* Carrossel */
+/* ------------------------------------------------------------------------------ */
+#carrossel{
+    width: 70vw;
+    height: 50vh;
+    min-width: 31.25rem;
+    min-height: 12.5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.contcarr{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+.contcarr img{
+    object-fit: cover;
+    width: 62.5rem;
+    height: 25rem;
+}
+/* ------------------------------------------------------------------------------ */
+/* MAIN */
+/* ------------------------------------------------------------------------------ */
+.main{
+    margin: 0 auto;
+    width: 75%;
+}
+/* ------------------------------------------------------------------------------ */
+/* MAIN unidade */
+/* ------------------------------------------------------------------------------ */
+#h1uni{
+    margin: 1rem auto;
+    width: 20%;
+}
+#pmain{
+    margin: 0 auto;
+    width: 80%;
+    font-size: 1rem;
+
+}
+#pmain p, #h1uni h1{
+    transition: 0.5s;
+}
+/* ------------------------------------------------------------------------------ */
+/* MAIN mapa */
+/* ------------------------------------------------------------------------------ */
+#mapacontainer{
+    display: flex;
+    width: 100%;
+    margin: 5rem 0 0 0;
+}
+
+#botmap{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: calc((100vw - 80%) - 30vw);
+}
+
+.buttonmapa{
+    margin: 0.5rem 0 0 0;
+    height: 3rem;
+    width: 100%;
+}
+/* ------------------------------------------------------------------------------ */
