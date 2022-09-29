@@ -178,18 +178,39 @@ body{
     display: flex;
     width: 100%;
     margin: 5rem 0 0 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(104, 104, 104,.2);
+    padding: 4rem;
+    border-radius: 50px;
 }
 
 #botmap{
     display: flex;
     flex-direction: column;
-    width: 30%;
-    min-width: calc((100vw - 80%) - 30vw);
+    padding: 0 3rem;
+    width: 40%;
 }
 
 .buttonmapa{
-    margin: 0.5rem 0 0 0;
+    margin: 3rem 0 0 0;
     height: 3rem;
+    width: 100%;
+    background-color: rgb(2, 7, 77);
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#mapadiv{
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#mapa{
     width: 100%;
 }
 /* ------------------------------------------------------------------------------ */
