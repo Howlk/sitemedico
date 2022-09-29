@@ -18,7 +18,7 @@ body{
 /* NAV */
 /* ----------------------------------------------------------------------------- */
 #menu{
-    background-color: rgb(203, 240, 185);
+    background-color: rgb(2, 7, 77);
     width: calc(100vw);
     min-height: 10vh;
     display: flex;
@@ -70,29 +70,84 @@ body{
 
 .linka, .ico{
     transition: 0.3s;
+    color: white;
 }
 /* ------------------------------------------------------------------------------ */
 /* Carrossel */
 /* ------------------------------------------------------------------------------ */
-#carrossel{
-    width: 70vw;
-    height: 50vh;
-    min-width: 31.25rem;
-    min-height: 12.5rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    overflow: hidden;
-    margin: 0 auto;
+.carrosselcontainer{
+    position: relative;
+    transition: 1s;
 }
-.contcarr{
+
+.carrosselcontainer .cr .slide{
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    transform: translateX(0);
+    min-height: 100vh;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 9%;
+    padding-bottom: 70px;
 }
-.contcarr img{
-    object-fit: cover;
-    width: 62.5rem;
-    height: 25rem;
+
+.carrosselcontainer .cr{
+    display: none;
 }
+.carrosselcontainer .cr.carr{
+    display: block;
+}
+
+.carrosselcontainer .cr:nth-child(1) .slide{
+    background: url(/img/carrossel/carrmed.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 50vh;
+}
+
+.carrosselcontainer .cr:nth-child(2) .slide{
+    background: url(/img/carrossel/carrmed2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 50vh;
+}
+
+.carrosselcontainer .cr:nth-child(3) .slide{
+    background: url(/img/carrossel/carr3med.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 50vh;
+}
+
+.carrosselcontainer #prevbut, .carrosselcontainer #nextbut{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    background-color: rgba(255,255,255,0.1);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 40%;
+    transition: 0.5s;
+}
+.carrosselcontainer #prevbut{
+    left: 20px;
+}
+.carrosselcontainer #nextbut{
+    right: 20px;
+}
+
+.coset{
+    color: rgba(255,255,255,0.1);
+}
+
 /* ------------------------------------------------------------------------------ */
 /* MAIN */
 /* ------------------------------------------------------------------------------ */
