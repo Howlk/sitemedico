@@ -18,6 +18,7 @@
 
     <!--#region Link JS  -->
     <script src="/js/carrossel.js" defer></script>
+    <script src="/js/trocarmapa.js" defer></script>
     <!--#endregion -->
     <body> 
  <div id="container princip">
@@ -63,26 +64,42 @@
 
     <div id="color" onclick="ant()">
     <main class="main" onclick="next()">
-        <div id="h1uni">
-            <h1>UNIDADES</h1>
-        </div>
-        <div id="pmain">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-        </div>
 
+        <div class="contecontain">    
+            <div id="h1uni">
+                <h1>UNIDADES</h1>
+            </div>
+            <div id="pmain">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
         <div id="mapacontainer">
 
             <div id="botmap">
-                <a href="#"><button type="button" class="buttonmapa">Botão 1</button></a>
-                <a href="#"><button type="button" class="buttonmapa">Botão 2</button></a>
-                <a href="#"><button type="button" class="buttonmapa">Botão 3</button></a>
-                <a href="#"><button type="button" class="buttonmapa">Botão 4</button></a>
+                <a><button type="button" class="buttonmapa" onclick="mapaFarm()">Farmácias</button></a>
+                <a><button type="button" class="buttonmapa" onclick="mapaUBS()">UBS</button></a>
+                <a><button type="button" class="buttonmapa" onclick="mapaSantaCasa()">Santa Casa</button></a>
+                <a><button type="button" class="buttonmapa" onclick="mapaHospitais()">Hospitais</button></a>
             </div>
-            
-            <div id="mapadiv">
-                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14950.898962011172!2d-54.62055953420411!3d-20.476495773198472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sFarm%C3%A1cias!5e0!3m2!1spt-BR!2sbr!4v1664492291394!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="containermap">
+                    <h1 id="textMap">Farmácia</h1>
+                    <div id="mapadiv">
+                        <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14950.898962011172!2d-54.62055953420411!3d-20.476495773198472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sFarm%C3%A1cias!5e0!3m2!1spt-BR!2sbr!4v1664492291394!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
             </div>
-            
+        </div>
+
+
+        <div class="contecontain" id="servcontent">
+            <div id="h1serv"><h1>Serviços</h1></div>
+            <div id="pserv"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p></div>
+        </div>
+
+        <div id="containerserv">
+                <div class="content">
+                    <h1 class="h1content cth1">Médico 1</h1>
+                    <div class="svdiv"></div>
+                </div>
         </div>
     </main>
     </div>
