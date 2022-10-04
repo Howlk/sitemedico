@@ -6,10 +6,10 @@
     color: rgb(9, 1, 58);
 }
 body{
-    background-color: rgb(247, 239, 239);
+    background-color: rgb(230, 230, 230);
 }
 #color{
-    background-color: rgb(229, 242, 245);
+    background-color: rgb(224, 224, 224);
     width: 80vw;
     min-width: 500px;
     margin: 0 auto;
@@ -158,18 +158,29 @@ body{
 /* ------------------------------------------------------------------------------ */
 /* MAIN unidade */
 /* ------------------------------------------------------------------------------ */
-#h1uni{
+.contecontain{
+    background-color: rgba(104, 104, 104,.2);
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 0 0 15px 0;
+}
+
+#h1uni, #h1serv{
     margin: 1rem auto;
     width: 20%;
+    text-align: center;
 }
-#pmain{
+#pmain, #pserv{
     margin: 0 auto;
     width: 80%;
     font-size: 1rem;
+    text-align: center;
 
-}
-#pmain p, #h1uni h1{
-    transition: 0.5s;
 }
 /* ------------------------------------------------------------------------------ */
 /* MAIN mapa */
@@ -177,7 +188,7 @@ body{
 #mapacontainer{
     display: flex;
     width: 100%;
-    margin: 5rem 0 0 0;
+    margin: 2rem 0 0 0;
     justify-content: center;
     align-items: center;
     background-color: rgba(104, 104, 104,.2);
@@ -196,21 +207,85 @@ body{
     margin: 3rem 0 0 0;
     height: 3rem;
     width: 100%;
-    background-color: rgb(2, 7, 77);
+    background: rgb(83, 83, 83);
     color: white;
     font-size: 20px;
     text-decoration: none;
     border-radius: 5%;
     cursor: pointer;
     transition: 0.5s;
+    min-width: 100px;
 }
 
-#mapadiv{
+#containermap{
+    text-align: center;
+    border-radius: 10%;
     width: 80%;
+    background: rgb(83, 83, 83);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 #mapa{
     width: 100%;
+    border-radius: 10%;
 }
+
+#textMap{
+    font-size: 20px;
+    margin: 5px 5px;
+    cursor: default;
+    color: rgb(207, 207, 207);
+}
+/* ------------------------------------------------------------------------------ */
+/* MAIN serviços */
+/* ------------------------------------------------------------------------------ */
+#containerserv{
+    width: 100%;
+    margin: 5rem 0 0 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rebeccapurple;
+    padding-bottom:0 ;
+}
+
+.content{
+    width: 20%;
+    height: 100%;
+    background-color: red;
+    height: 35vh;
+}
+
+.svdiv
+.h1content{
+
+}
+
+/* #serv1{
+    background: url('/img/servicos/serv1.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#serv2{
+    background: url('/img/servicos/serv2.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#serv3{
+    background: url('/img/servicos/serv3.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#serv4{
+    background: url('/img/servicos/serv4.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
 /* ------------------------------------------------------------------------------ */
