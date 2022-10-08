@@ -13,7 +13,7 @@ body{
     width: 80vw;
     min-width: 500px;
     margin: 0 auto;
-    padding-top: 2rem ;
+    padding:2rem 0 2rem 0 ;
 }
 /* NAV */
 /* ----------------------------------------------------------------------------- */
@@ -26,7 +26,7 @@ body{
     align-items: center;
 }
 #logo img{
-    width: 3rem;
+    width: 5rem;
 }
 
 #menubot{
@@ -159,7 +159,7 @@ body{
 /* MAIN unidade */
 /* ------------------------------------------------------------------------------ */
 .contecontain{
-    background-color: rgba(104, 104, 104,.2);
+    background-color: rgba(180, 180, 180, 0.2);
     width: 70%;
     margin: 0 auto;
     display: flex;
@@ -187,105 +187,210 @@ body{
 /* ------------------------------------------------------------------------------ */
 #mapacontainer{
     display: flex;
+    flex-direction: column;
     width: 100%;
     margin: 2rem 0 0 0;
     justify-content: center;
     align-items: center;
-    background-color: rgba(104, 104, 104,.2);
-    padding: 4rem;
+    background-color: rgba(180, 180, 180, 0.2);
+    padding: 0 0 4rem 0;
     border-radius: 50px;
 }
 
 #botmap{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    top: 10px;
     padding: 0 3rem;
-    width: 40%;
+    width: 80%;
 }
 
 .buttonmapa{
-    margin: 3rem 0 0 0;
+    margin: 1rem 0 1rem 0;
     height: 3rem;
     width: 100%;
-    background: rgb(83, 83, 83);
+    background: rgb(45, 30, 65);
     color: white;
     font-size: 20px;
     text-decoration: none;
-    border-radius: 5%;
+    border-radius: 5px 5px 15px 15px;
     cursor: pointer;
     transition: 0.5s;
     min-width: 100px;
+    border: 1px solid black;
 }
 
 #containermap{
     text-align: center;
-    border-radius: 10%;
-    width: 80%;
-    background: rgb(83, 83, 83);
+    width: 90%;
+    margin: 0 0 0 1rem;
+    background: rgb(45, 30, 65);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 #mapa{
     width: 100%;
-    border-radius: 10%;
 }
 
 #textMap{
     font-size: 20px;
-    margin: 5px 5px;
+    margin: 20px 20px;
     cursor: default;
     color: rgb(207, 207, 207);
+}
+
+#farmac{
+    background-color: #D2D2D2;
+    color: #3A0900;
+    border: none;
 }
 /* ------------------------------------------------------------------------------ */
 /* MAIN serviços */
 /* ------------------------------------------------------------------------------ */
-#containerserv{
+#servcontain2{
     width: 100%;
-    margin: 5rem 0 0 0;
-    padding: 1rem;
     display: flex;
     justify-content: space-between;
-    background-color: rebeccapurple;
-    padding-bottom:0 ;
 }
 
-.content{
-    width: 20%;
+.containerserv{
+    width: 23%;
+    height: 40vh;
+    padding-bottom:0;
+    position: relative;
+    
+}
+
+#servcontent{
+    margin: 2rem auto;
+}
+
+.servimg{
+    display: block;
+    width: 100%;
     height: 100%;
-    background-color: red;
-    height: 35vh;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transition: 0.5s;
 }
 
-.svdiv
-.h1content{
-
+.hidde{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(#008CBA, #013b4e);
+    opacity: 0.8;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.butimg{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    background-color: #003344;
+    color: white;
+    transition: 0.5s;
+    border: 1px solid black;
+    opacity: 1;
 }
 
-/* #serv1{
-    background: url('/img/servicos/serv1.jfif');
+#servimg1{
+    background: url('/img/servicos/radio2.png.opdownload');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
 }
 
-#serv2{
-    background: url('/img/servicos/serv2.jfif');
+#servimg2{
+    background: url('/img/servicos/nutricionista2.jpeg.opdownload');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
 }
 
-#serv3{
-    background: url('/img/servicos/serv3.jfif');
+#servimg3{
+    background: url('/img/servicos/ortopedia.webp');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
 }
 
-#serv4{
-    background: url('/img/servicos/serv4.jfif');
+#servimg4{
+    background: url('/img/servicos/oftamologia.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-} */
+}
 /* ------------------------------------------------------------------------------ */
+/* MAIN SESAU */
+/* ------------------------------------------------------------------------------ */
+#sesaucontainer{
+    width: 100%;
+    background-color: rgb(2, 7, 77);
+    height: 30vh;
+    margin: 3rem 0 3rem 0 ;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+#conteudosesau{
+    width: 50%;
+    height: 80%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid white ;
+}
+
+#conteudosesau2{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#conteudosesau p{
+    color: white;
+    text-align: center;
+    width: 80%;
+}
+
+.iconesesau{
+    width: 100%;
+    margin: 10px;
+}
+
+#sesaubut{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #5a3997;
+    border: none;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#conteudosesau i{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#footercontainer{
+    width: 100vw;
+    height: 400px;
+    background-color: rgb(100, 100, 100);
+}
