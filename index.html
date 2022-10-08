@@ -14,6 +14,7 @@
     <!--#region links  Css-->
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/indexHover.css">
+    <link rel="stylesheet" href="/css/indexActive.css">
     <!--#endregion -->
 
     <!--#region Link JS  -->
@@ -24,14 +25,14 @@
  <div id="container princip">
     <nav id="menu">
         <div id="logo">
-            <a  href="index.html"><img src="/img/Logo.png" alt=""></a>
+            <a href="index.html"><img src="/img/Logo.png" alt=""></a>
         </div>
         <div id="menubot">
             <ul >
-                <li><a class="linka" href="index.html">Home</a></li>
-                <li><a class="linka" href="#">Serviços</a></li>
-                <li><a class="linka" href="#">Contatos</a></li>
-                <li><a class="linka" href="#">Sobre</a></li>
+                <li class="bothovNav"><a class="linka" href="index.html">Home</a></li>
+                <li class="bothovNav"><a class="linka" href="#">Serviços</a></li>
+                <li class="bothovNav"><a class="linka" href="#">Contatos</a></li>
+                <li class="bothovNav"><a class="linka" href="#">Sobre</a></li>
             </ul>
         </div>
         <div id="menubot2">
@@ -58,12 +59,12 @@
             </div>
         </div>
 
-        <div id="prevbut"> <i class="bi bi-arrow-bar-left coset"></i> </div>
-        <div id="nextbut"> <i class="bi bi-arrow-bar-right coset"></i> </div>
+        <div id="prevbut"> <i class="bi bi-arrow-bar-left coset" onclick="ant()"></i> </div>
+        <div id="nextbut"> <i class="bi bi-arrow-bar-right coset"  onclick="next()"></i> </div>
     </section>
 
-    <div id="color" onclick="ant()">
-    <main class="main" onclick="next()">
+    <div id="color">
+    <main class="main">
 
         <div class="contecontain">    
             <div id="h1uni">
@@ -76,16 +77,16 @@
         <div id="mapacontainer">
 
             <div id="botmap">
-                <a><button type="button" class="buttonmapa" onclick="mapaFarm()">Farmácias</button></a>
-                <a><button type="button" class="buttonmapa" onclick="mapaUBS()">UBS</button></a>
-                <a><button type="button" class="buttonmapa" onclick="mapaSantaCasa()">Santa Casa</button></a>
-                <a><button type="button" class="buttonmapa" onclick="mapaHospitais()">Hospitais</button></a>
+                <a><button type="button" class="buttonmapa" id="farmac" onclick="mapaFarm()">Farmácias</button></a>
+                <a><button type="button" class="buttonmapa" id="UBS" onclick="mapaUBS()">UBS</button></a>
+                <a><button type="button" class="buttonmapa" id="satancasa" onclick="mapaSantaCasa()">Santa Casa</button></a>
+                <a><button type="button" class="buttonmapa" id="hosp" onclick="mapaHospitais()">Hospitais</button></a>
             </div>
                 <div id="containermap">
-                    <h1 id="textMap">Farmácia</h1>
                     <div id="mapadiv">
                         <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14950.898962011172!2d-54.62055953420411!3d-20.476495773198472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sFarm%C3%A1cias!5e0!3m2!1spt-BR!2sbr!4v1664492291394!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
+                    <h1 id="textMap">Farmácia</h1>
             </div>
         </div>
 
@@ -94,15 +95,57 @@
             <div id="h1serv"><h1>Serviços</h1></div>
             <div id="pserv"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p></div>
         </div>
+        <div id="servcontain2">
+                <div class="containerserv">
+                        <div class="servimg" id="servimg1">
+                            <div class="hidde">
+                                <div id="hiddetext"><a href="#"><button class="butimg">Radiologia</button></a></div>
+                            </div>
+                        </div>  
+                </div>
 
-        <div id="containerserv">
-                <div class="content">
-                    <h1 class="h1content cth1">Médico 1</h1>
-                    <div class="svdiv"></div>
+                <div class="containerserv">
+                    <div class="servimg" id="servimg2">
+                        <div class="hidde">
+                            <div id="hiddetext"><a href="#"><button class="butimg">Nutricionista</button></a></div>
+                        </div>
+                    </div>   
+                </div>
+
+                <div class="containerserv">
+                    <div class="servimg" id="servimg3">
+                        <div class="hidde">
+                            <div id="hiddetext"><a href="#"><button class="butimg">Ortopedista</button></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerserv">
+                    <div class="servimg" id="servimg4">
+                        <div class="hidde">
+                            <div id="hiddetext"><a href="#"><button class="butimg">Oftamologista</button></a></div>
+                        </div>
+                    </div>
                 </div>
         </div>
+
+        <div id="sesaucontainer">
+            <div id="conteudosesau">
+                <p>Para maiores informações, clique aqui 🠗🠗🠗</p>
+                <a href="#"><button id="sesaubut"><i class="bi bi-whatsapp"></i></button></a>
+            </div>
+                <div id="conteudosesau2">
+                    <div id="sesau"><a href="https://www.campogrande.ms.gov.br/sesau/" target="_blank"><img class="iconesesau" src="/img/logosesau.png" alt=""></a></div>
+                    <div id="senac"><a href="https://www.senac.br" target="_blank"><img class="iconesesau" src="/img/logosenac.png" alt=""></a></div>
+                </div>
+            </div>
     </main>
     </div>
+    <footer>
+        <div id="footercontainer">
+
+        </div>
+    </footer>
  </div>
 </body>
 </html>
