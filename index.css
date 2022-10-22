@@ -5,11 +5,12 @@
     box-sizing: border-box;
     color: rgb(9, 1, 58);
 }
+
 body{
-    background-color: rgb(230, 230, 230);
+    background: url('/img/texture.webp');
 }
 #color{
-    background-color: rgb(224, 224, 224);
+    background-color: rgba(224, 224, 224,0.6);
     width: 80vw;
     min-width: 500px;
     margin: 0 auto;
@@ -24,6 +25,9 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    z-index: 100;
+    transition: 0.5s;
 }
 #logo img{
     width: 5rem;
@@ -33,7 +37,7 @@ body{
     display: flex;
     list-style: none;
     justify-content: space-between;
-    width: calc(100%-30%)
+    width: calc(100%-30%);
 }
 
 #menubot ul{
@@ -48,6 +52,7 @@ body{
     justify-content: space-between;
     padding: 1rem;
     width: calc(100%-10%)
+    
 }
 
 #menubot2 ul{
@@ -258,6 +263,11 @@ body{
     height: 40vh;
     padding-bottom:0;
     position: relative;
+    transition: 0.5s;
+}
+
+.containerserv:hover{
+    transform: translateY(-10px);
     
 }
 
@@ -280,8 +290,7 @@ body{
     bottom: 100%;
     left: 0;
     right: 0;
-    background-image: linear-gradient(#008CBA, #013b4e);
-    opacity: 0.8;
+    background-image: linear-gradient(rgba(45,183,230,0.1), #052733);
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -299,7 +308,6 @@ body{
     color: white;
     transition: 0.5s;
     border: 1px solid black;
-    opacity: 1;
 }
 
 #servimg1{
@@ -361,6 +369,7 @@ body{
     color: white;
     text-align: center;
     width: 80%;
+    cursor: default;
 }
 
 .iconesesau{
@@ -368,7 +377,7 @@ body{
     margin: 10px;
 }
 
-#sesaubut{
+#sesaubut, #butonform{
     display: inline-block;
     border-radius: 4px;
     background-color: #5a3997;
@@ -389,8 +398,66 @@ body{
     transition: 0.5s;
 }
 
+/* Footer */
+
 #footercontainer{
     width: 100vw;
     height: 400px;
-    background-color: rgb(100, 100, 100);
+    background-color: rgba(100, 100, 100, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
 }
+
+#containerofoter2{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#texto1container{
+    width: 20%;
+    margin: 70px 0 0 0;
+}
+
+#texto1container p {
+    color:rgb(45, 30, 65);
+    font-size: 20px;
+    font-family: 'Noto Sans Mono', monospace;;
+}
+
+
+#texto2container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#butonform{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(56, 56, 56);
+    border: none;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 30px 0 0 0;
+}
+#butonform i{
+    color: white;
+}
+
+#footerimg{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
