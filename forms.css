@@ -1,0 +1,56 @@
+body{
+    background-image: url('/imagem/formbackground.jpg');
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+#conteiner{
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.28);
+    margin: 20vh auto;
+    text-align: center;
+    border-radius: 20px ;
+    box-shadow: 0 0 1em black;
+}
+
+#conteiner h2{
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+input, select, textarea{
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 9px;
+    padding: 10px;
+    font-size: 15px;
+    border:none;
+    border-bottom: 4px solid rgb(224, 193, 17);
+    transition: 0.5s;
+}
+
+.enviar, .cancelar{
+    display: inline-block;
+    width: 100px;
+    padding: 10px 15px;
+    margin: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 205, 139);
+    transition: 1s;
+}
+.cancelar:hover{
+    background-color: rgb(163, 0, 0);
+    color: white;
+}
+.enviar:hover{
+    background-color: green;
+    color: white;
+}
+input:hover, select:hover, textarea:hover{
+    padding: 15px;
+    cursor: default;
+    outline: none;
+    box-shadow: 0 0 1em black;
+}

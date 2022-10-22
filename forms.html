@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/forms.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="/js/msg.js" defer></script>
+    <title>Formulário</title>
+</head>
+<body>
+    <div id="conteiner">   
+        <h2>Contato</h2>
+
+        <form>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome" required oninvalid="this.setCustomValidity('Informe o nome')" onchange="try{setCustomValidity('')}catch(e){}">
+            <input type="email" name="Email" id="email" placeholder="E-mail" required oninvalid="this.setCustomValidity('Informe um E-mail válido.')" onchange="try{setCustomValidity('')}catch(e){}">
+            <input type="number" name="fone" id="fone" placeholder="Telefone ou celular" required oninvalid="this.setCustomValidity('Coloque um número válido')" onchange="try{setCustomValidity('')}catch(e){}">
+
+            <select name="lugar" id="lugar" required>
+                <option value="" disabled selected>Selecione seu local</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+            <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Envie aqui a mensagem"></textarea>
+            <button type="submit" class="enviar" onclick="msg()">Enviar</button>
+            <button type="reset" class="cancelar">Cancelar</button>
+        </form>
+    </div>
+</body>
+</html>
