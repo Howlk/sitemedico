@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="#"></head>
     <!--#region Link CDN  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap" rel="stylesheet">
     <!--#endregion -->
     
@@ -20,6 +21,7 @@
     <!--#region Link JS  -->
     <script src="/js/carrossel.js" defer></script>
     <script src="/js/trocarmapa.js" defer></script>
+    <script src="/js/menu.js" defer></script>
     <!--#endregion -->
     <body> 
  <div id="container princip">
@@ -29,21 +31,21 @@
         </div>
         <div id="menubot">
             <ul >
-                <li class="bothovNav"><a class="linka" href="index.html">Home</a></li>
-                <li class="bothovNav"><a class="linka" href="#">Serviços</a></li>
-                <li class="bothovNav"><a class="linka" href="#">Contatos</a></li>
+                <li class="bothovNav"><a class="linka" href="#carrosselcontainer">Home</a></li>
+                <li class="bothovNav"><a class="linka" href="#servcontent" id="testeHome">Serviços</a></li>
+                <li class="bothovNav"><a class="linka" href="#footercontainer">Contatos</a></li>
                 <li class="bothovNav"><a class="linka" href="#">Sobre</a></li>
             </ul>
         </div>
         <div id="menubot2">
             <ul>
-                <li><a  href="#"><i class="bi bi-instagram ico"></a></i></li>
-                <li><a  href="#"><i class="bi bi-facebook ico"></i></a></li>
-                <li><a  href="#"><i class="bi bi-whatsapp ico"></i></a></li>
+                <li><a  href="https://www.instagram.com/sem/campaign/emailsignup/?campaign_id=13534421690&extra_1=s|c|547348930993|e|instagram%20%27|&placement=&creative=547348930993&keyword=instagram%20%27&partner_id=googlesem&extra_2=campaignid%3D13534421690%26adgroupid%3D126262409974%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-1321618851291%26loc_physical_ms%3D9101950%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMI-fnDoZHw-gIVz0FIAB3P3wqSEAAYASAAEgJMaPD_BwE" target="_blank"><i class="bi bi-instagram ico"></a></i></li>
+                <li><a  href="https://www.facebook.com/login/device-based/regular/login/?login_attempt=1" target="_blank"><i class="bi bi-facebook ico"></i></a></li>
+                <li><a  href="https://web.whatsapp.com" target="_blank"><i class="bi bi-whatsapp ico"></i></a></li>
             </ul>
         </div>
     </nav>
-    <section class="carrosselcontainer">
+    <section class="carrosselcontainer" id="carrosselcontainer">
         <div class="cr carr">
             <div class="slide">
             </div>
@@ -59,8 +61,8 @@
             </div>
         </div>
 
-        <div id="prevbut"> <i class="bi bi-arrow-bar-left coset" onclick="ant()"></i> </div>
-        <div id="nextbut"> <i class="bi bi-arrow-bar-right coset"  onclick="next()"></i> </div>
+        <div id="prevbut" onclick="ant()"> <i class="bi bi-arrow-bar-left coset" onclick="ant()"></i> </div>
+        <div id="nextbut" onclick="ant()"> <i class="bi bi-arrow-bar-right coset"  onclick="next()"></i> </div>
     </section>
 
     <div id="color">
@@ -132,7 +134,7 @@
         <div id="sesaucontainer">
             <div id="conteudosesau">
                 <p>Para maiores informações, clique aqui 🠗🠗🠗</p>
-                <a href="#"><button id="sesaubut"><i class="bi bi-whatsapp"></i></button></a>
+                <a href="https://web.whatsapp.com"><button id="sesaubut"><i class="bi bi-whatsapp"></i></button></a>
             </div>
                 <div id="conteudosesau2">
                     <div id="sesau"><a href="https://www.campogrande.ms.gov.br/sesau/" target="_blank"><img class="iconesesau" src="/img/logosesau.png" alt=""></a></div>
@@ -143,7 +145,23 @@
     </div>
     <footer>
         <div id="footercontainer">
+            <div id="containerofoter2">
+                <div id="texto1container">
+                    <h1 style="color:white">Endereço</h1>
+                    <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. Inventore, dolorem.</p>
+                </div>
 
+                <div id="footerimg">
+                    <div id="footerimg"><a href="https://www.campogrande.ms.gov.br/sesau/" target="_blank"><img class="iconesesau" src="/img/logosesau.png" alt=""></a></div>
+                    <div id="footerimg"><a href="https://www.senac.br" target="_blank"><img class="iconesesau" src="/img/logosenac.png" alt=""></a></div>
+                </div>
+
+                <div id="texto2container">
+                    <h1 style="color:white">Fale conosco</h1>
+                    <p>Envie uma mensagem para nós!!!</p>
+                    <a href="/html/forms.html" target="_blank"><button id="butonform"><i class="bi bi-chat-dots"></i></button></a>
+                </div>
+            </div>
         </div>
     </footer>
  </div>
