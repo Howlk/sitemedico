@@ -1,0 +1,4 @@
+.ico:active, .linka:active, .butimg:active{
+    background-color: rgb(76, 84, 192);
+    box-shadow: 0 5px #666;
+}
